@@ -75,6 +75,7 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/iqram21/iqram21/output/github-contribution-grid-snake.svg" />
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/iqram21/iqram21/output/github-contribution-grid-snake.svg" />
 </picture>
+![snake_gif](https://github.com/Meghna521/Meghna521/blob/output/github-contribution-grid-snake.gif)
 
 
 ### 📈 Recent Activity
