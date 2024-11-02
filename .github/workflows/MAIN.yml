@@ -1,0 +1,30 @@
+name: Generate Snake Animation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"  # Menjalankan setiap 6 jam. Anda bisa mengubah sesuai kebutuhan.
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # Step 2: Generate the Snake Animation
+      - name: Generate Snake Animation
+        uses: Platane/snk@v2
+        with:
+          github_user_name: iqram21  # Ganti dengan username GitHub Anda
+          svg_out_path: dist/github-contribution-grid-snake.svg
+
+      # Step 3: Upload the Snake Animation to the output branch
+      - name: Push Snake Animation to output branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
