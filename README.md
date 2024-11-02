@@ -68,12 +68,6 @@
 
 ---
 
-### 🐍 Snake Animation
-
-</picture>
-![snake_gif](https://github.com/iqram21/iqram21/blob/output/github-contribution-grid-snake.gif)
-
-
 ### 📈 Recent Activity
 
 <!--START_SECTION:activity-->
